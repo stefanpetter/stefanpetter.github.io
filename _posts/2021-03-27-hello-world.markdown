@@ -2,28 +2,16 @@
 layout: post
 title:  "Hello World!"
 date:   2021-03-27 18:55:05 +0200
-categories: jekyll update
+categories: website blog
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+Hello World! Welcome to my brand spanking new website. For some time now, I wanted to write blogs about awesome Azure/tech related stuff, and here we are! A proper introduction of myself will follow later. Let's talk tech! How did this website came to life? 
 
-Jekyll requires blog post files to be named according to the following format:
+There are a million different ways of creating and hosting a website. The choice we make is often influenced by experience. I created a lot of websites in the past based on free HTML templates, backed by a custom PHP framework and a good 'ol MySQL database. However, this time I wanted to do things differently. 
 
-`YEAR-MONTH-DAY-title.MARKUP`
+This website wil host blogs. Blogs are simple static content, so a database is not needed. Whilst searching for ways to host a static website, I came across [Github Pages][github-pages]. A free and simple way to host a static website.
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+< Insert story about WSL2 not working nicely here >
 
-Jekyll also offers powerful support for code snippets:
+After a lot of struggling with getting ruby/bundler/jekyll to work, blogs now can easily be added by writing it in a markdown file and pushing it to a repository :) Github (Actions) will take care of the CI/CD stuff and before you know it, the blog is live!
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+[github-pages]: https://pages.github.com/
