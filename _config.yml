@@ -21,7 +21,7 @@
 title: Stefan Petter | Blogs
 email: info@stefanpetter.nl
 description: My personal blog to tell you all about my adventures with Azure, sharing my knowledge along the way!
-baseurl: https://stefanpetter.nl" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: https://stefanpetter.nl # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: stefan_petter
 github_username:  stefanpetter
 
