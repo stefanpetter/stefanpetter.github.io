@@ -34,12 +34,12 @@ After some more tweaking, the button worked! It triggered a release with a prede
 
 I made a video of the result! You can [check it out][tweet-stefan-petter]{:target="_blank"} on Twitter :)
 
-The code for the project is available in Github. It isn't the prettiest code and can really use some extra variables for stuff, but it was just a quick and fun proof of concept: [stefanpetter/C-DevOpsReleaseOnButtonPush][github-stefan]{:target="_blank"}. 
+The code for the project is available in Github. It isn't the prettiest code and can really use some extra variables for stuff, but it was just a quick and fun proof of concept: [stefanpetter/C-DevOpsReleaseOnButtonPush][github-stefan-buttonpush]{:target="_blank"}. 
 
 If you have any questions, feel free to contact me on Twitter!
 
 [tweet-troy-witthoeft]: https://twitter.com/Twitt_hoeft/status/1372582974324084739
 [tweet-stefan-petter]: https://twitter.com/Stefan_Petter/status/1372836952026853381
-[github-stefan]: https://github.com/stefanpetter/C-DevOpsReleaseOnButtonPush
+[github-stefan-buttonpush]: https://github.com/stefanpetter/C-DevOpsReleaseOnButtonPush
 [ms-devops-release-api]: https://docs.microsoft.com/en-us/rest/api/azure/devops/release/releases/create?view=azure-devops-rest-6.0
 [ms-devops-release-api]: https://docs.microsoft.com/en-us/rest/api/azure/devops/?view=azure-devops-rest-6.1
