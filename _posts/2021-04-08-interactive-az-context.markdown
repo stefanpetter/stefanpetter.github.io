@@ -2,7 +2,7 @@
 layout: post
 title:  "Choosing Your Azure PowerShell Context With a Simple Wizard"
 date:   2021-04-08 13:37:00 +0200
-categories: devops pipelines 
+categories: azure powershell 
 ---
 #### Azure Contexts in Powershell
 
