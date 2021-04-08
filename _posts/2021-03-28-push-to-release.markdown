@@ -4,28 +4,10 @@ title:  "Creating a Button to Trigger a DevOps Release From Anywhere!"
 date:   2021-03-28 18:55:05 +0200
 categories: devops pipelines 
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
-
-Jekyll requires blog post files to be named according to the following format:
-
-`YEAR-MONTH-DAY-title.MARKUP`
-
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
 18 march, Troy Witthoeft [tweeted][tweet-troy-witthoeft] if someone could make a wifi-connected button that could trigger a Release Pipeline. As a tinkerer with lots of IoT boards laying around, this was a fun little project, so I accepted the challenge!
 
+I started off with a NodeMCU, some wires and a button. The NodeMCU has 
 
+![image](/assets/img/pushtorelease.png)
 
-[tweet-troy-witthoeft]: https://twitter.com/Twitt_hoeft/status/1372582974324084739?s=20
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+[tweet-troy-witthoeft]: https://twitter.com/Twitt_hoeft/status/1372582974324084739
