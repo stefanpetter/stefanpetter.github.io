@@ -6,7 +6,7 @@ categories: azure truenas backup
 ---
 #### TrueNAS as your personal storage solution
 
-Previous year I invested in a NAS to store my precious data. TrueNAS uses ZFS te create a resilient backup solition. I have 3 4TB HDD's in my NAS configured in RaidZ1, preventing data loss if even a whole disk fails. This already sound a LOT better than just having all the files on one Disk. To make sure that my data is safe in case of a bigger disaster, I replicated the most important data to Azure. Fortunately, TrueNAS already has features in place to do just that. As I could't find a good tutorial on the matter myself, I decided to create one :) 
+Previous year I invested in a NAS to store my precious data. TrueNAS uses ZFS te create a resilient backup solution. I have 3 4TB HDD's in my NAS configured in RaidZ1, preventing data loss if even a whole disk fails. This already sounds a LOT better than just having all the files on one disk. To make sure that my data is safe in case of a bigger disaster, I replicated the most important data to Azure. Fortunately, TrueNAS already has features in place to do just that. As I could't find a good tutorial on the matter myself, I decided to create one :) 
 
 #### Full Walkthrough
 
@@ -25,7 +25,7 @@ The next step is not mandatory for functionality, but I really wanted to include
 
 ![image](/assets/img/truenas-azure-7.png)
 
-After restricting access, we need to grab the storage account key. Please make sure that you don't share this key with anyone! The mentioned storage account in this tutorial does not contain any meaningful data and will be deleted before this post will reach your eyes :) The storage account key will be availeble from the "Access keys" tab. Copy the content from the "Key" field. 
+After restricting access, we need to grab the storage account key. Please make sure that you don't share this key with anyone! The mentioned storage account in this tutorial does not contain any meaningful data and will be deleted before this post will reach your eyes :) The storage account key will be available from the "Access keys" tab. Copy the content from the "Key" field. 
 
 ![image](/assets/img/truenas-azure-2.png)
 
@@ -38,16 +38,16 @@ After successfully adding the credentials, we need to add a container in the sto
 ![image](/assets/img/truenas-azure-10.png)
 
 Now for the final step, in TrueNAS, go to Tasks > Cloud Sync Tasks and click "Add". My personal preferece is to add multiple cloud sync tasks for different data types. This way you'll have more control over the schedule frequency. The screenshot shows a Cloud Sync Task for pictures. 
-The discription is for you to choose. The direction for the task is PUSH. We want to send/push our data from TrueNAS to Azure. For transfer mode I chose SYNC. Other options are COPY and MOVE; 
-- Sync will match the data from TrueNAS to Azure. deleted files in TrueNAS will aldo be deleted in Azure
-- Copy will copy the data to Azure. Keeping everything in Azure till the end of time. 
+The description is for you to choose. The direction for the task is PUSH. We want to send/push our data from TrueNAS to Azure. For transfer mode I chose SYNC. Other options are COPY and MOVE; 
+- Sync will match the data from TrueNAS to Azure. Deleted files in TrueNAS will also be deleted in Azure
+- Copy will copy the data to Azure. Keeping everything in Azure 'til the end of time. 
 - Move will move the data to Azure and delete it from TrueNAS
 
 The Cloud Sync task will run once every night 12:00 AM. In the Credential field, select your newly added credential from the previous step. In the container field, Select the container we created in the previous step. In the Folder pane, Type in a new folder name for your cloud sync task. I chose "Pictures". There are other settings in this pane, but you can leave them default for now. Press submit. You'll return to the overview.
 
 ![image](/assets/img/truenas-azure-11.png)
 
-To test the cloud sync task you can select "Dry run". To immediately start the sync, you can select "Run now". The first sync can take up a long time. Times will depend on the amount of data in your dataset and your upload speed. After a successful sync, the status will show "Success"
+To test the cloud sync task you can select "Dry run". To immediately start the sync, you can select "Run now". The first sync can take up a long time. Time will depend on the amount of data in your dataset and your upload speed. After a successful sync, the status will show "Success"
 
 ![image](/assets/img/truenas-azure-1.png)
 
